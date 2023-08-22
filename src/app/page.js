@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Animation from '@/components/animation'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -9,12 +10,17 @@ export default function Home() {
             <br className="hidden lg:inline-block" /> KIM SUNGHEE
           </h1>
           <p className="mb-8 leading-relaxed">웹세상의 건축가, 사용자들의 편의를 고려한 아름다운 웹을 건설하는 개발자입니다. <br /> 레고를 조립하듯 차곡차곡 목표를 완성해나갑니다!</p>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">프로젝트 보러가기</button>
+          </div> */}
+          <div>
+            <Link className='mr-5 hover:text-white' href="https://github.com/Kimsunghee3">Github</Link>
+            <Link className='mr-5 hover:text-white' href="https://chopssal.tistory.com/">Tistory</Link>
+            <Link className='mr-5 hover:text-white' href="https://open.kakao.com/o/s2ZkMDCf">Contact</Link>
           </div>
+          <Animation/>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <Animation/>
         </div>
       </div>
   )

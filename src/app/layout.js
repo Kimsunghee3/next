@@ -17,7 +17,7 @@ export default async function RootLayout({ children }) {
     <html>
       <body>
         <Providers>
-          <Header/>
+          {/* <Header/> */}
           <main className="bg-white dark: bg-black">
             {children}
           </main>
